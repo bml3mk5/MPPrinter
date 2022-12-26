@@ -1,0 +1,36 @@
+*** wxWidgets-3.0.0-orig/src/gtk/print.cpp	2013-11-11 22:10:39.000000000 +0900
+--- wxWidgets-3.0.0/src/gtk/print.cpp	2013-12-05 01:19:38.000000000 +0900
+***************
+*** 393,398 ****
+--- 393,404 ----
+      else
+          data.SetPaperId(wxPAPER_NONE);
+  
++     if (data.GetPaperId() != wxPAPER_NONE) {
++         gdouble w = gtk_paper_size_get_width(paper_size, GTK_UNIT_MM);
++         gdouble h = gtk_paper_size_get_height(paper_size, GTK_UNIT_MM);
++         data.SetPaperSize(wxSize((int)(w+0.5),(int)(h+0.5)));
++     }
++ 
+      data.SetPrinterName(gtk_print_settings_get_printer(m_config));
+  
+      return true;
+***************
+*** 824,830 ****
+  
+                      m_pageDialogData.SetPaperSize(wxSize((int)(pw+0.5),
+                                                           (int)(ph+0.5)));
+!                 }
+  
+                  result = wxID_OK;
+              }
+--- 830,838 ----
+  
+                      m_pageDialogData.SetPaperSize(wxSize((int)(pw+0.5),
+                                                           (int)(ph+0.5)));
+!                 } else {
+!                     m_pageDialogData.SetPaperSize(m_pageDialogData.GetPrintData().GetPaperSize());
+!                 } 
+  
+                  result = wxID_OK;
+              }

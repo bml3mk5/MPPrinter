@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ja_JP</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>jp</string>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>mpprinter</string>
+	<key>CFBundleIconFile</key>
+	<string>mpprinter.icns</string>
+	<key>CFBundleName</key>
+	<string>mpprinter</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>APPLICATION_VERSION</string>
+	<key>CFBundleShortVersionString</key>
+	<string>APPLICATION_VERSION</string>
+	<key>CFBundleGetInfoString</key>
+	<string>mpprinter version APPLICATION_VERSION, (c) 2011-2015 Sasaji</string>
+	<key>CFBundleLongVersionString</key>
+	<string>APPLICATION_VERSION, (c) 2011-2015 Sasaji</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 2011-2015 Sasaji</string>
+	<key>LSRequiresCarbon</key>
+	<true/>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

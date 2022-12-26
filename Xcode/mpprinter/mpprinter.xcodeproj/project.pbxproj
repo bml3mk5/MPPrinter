@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D959857E24A9001200A7BCC6 /* coordinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D959857A24A9001200A7BCC6 /* coordinate.cpp */; };
+		D959857F24A9001200A7BCC6 /* dpbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D959857C24A9001200A7BCC6 /* dpbuffer.cpp */; };
+		D9BD1A8E1C0AD687002E06E5 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A741C0AD687002E06E5 /* config.cpp */; };
+		D9BD1A8F1C0AD687002E06E5 /* ctrl_setting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A761C0AD687002E06E5 /* ctrl_setting.cpp */; };
+		D9BD1A901C0AD687002E06E5 /* debugreport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A781C0AD687002E06E5 /* debugreport.cpp */; };
+		D9BD1A911C0AD687002E06E5 /* errorinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A7A1C0AD687002E06E5 /* errorinfo.cpp */; };
+		D9BD1A921C0AD687002E06E5 /* marginbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A7C1C0AD687002E06E5 /* marginbox.cpp */; };
+		D9BD1A931C0AD687002E06E5 /* mp_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A7E1C0AD687002E06E5 /* mp_model.cpp */; };
+		D9BD1A941C0AD687002E06E5 /* mp_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A801C0AD687002E06E5 /* mp_printer.cpp */; };
+		D9BD1A951C0AD687002E06E5 /* mp80.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A821C0AD687002E06E5 /* mp80.cpp */; };
+		D9BD1A961C0AD687002E06E5 /* mp1020.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A841C0AD687002E06E5 /* mp1020.cpp */; };
+		D9BD1A981C0AD687002E06E5 /* mpprinter.rc in Resources */ = {isa = PBXBuildFile; fileRef = D9BD1A881C0AD687002E06E5 /* mpprinter.rc */; };
+		D9BD1A991C0AD687002E06E5 /* server_setting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A891C0AD687002E06E5 /* server_setting.cpp */; };
+		D9BD1A9A1C0AD687002E06E5 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A8B1C0AD687002E06E5 /* server.cpp */; };
+		D9BD1AA71C0AD785002E06E5 /* prn_font_l3.dat in Resources */ = {isa = PBXBuildFile; fileRef = D9BD1AA51C0AD773002E06E5 /* prn_font_l3.dat */; };
+		D9BD1AA81C0AD788002E06E5 /* prn_font_m8.dat in Resources */ = {isa = PBXBuildFile; fileRef = D9BD1AA61C0AD773002E06E5 /* prn_font_m8.dat */; };
+		D9BD1AAB1C0AE0E9002E06E5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1AA91C0AE0E9002E06E5 /* main.cpp */; };
+		D9BD1AD71C0B5C46002E06E5 /* densitybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1AD51C0B5C46002E06E5 /* densitybox.cpp */; };
+		D9C49EBF1BF1C01400831032 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EBE1BF1C01400831032 /* IOKit.framework */; };
+		D9C49EC11BF1C02200831032 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EC01BF1C02200831032 /* Carbon.framework */; };
+		D9C49EC31BF1C02D00831032 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EC21BF1C02D00831032 /* Cocoa.framework */; };
+		D9C49EC51BF1C03700831032 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EC41BF1C03700831032 /* AudioToolbox.framework */; };
+		D9C49EC71BF1C05900831032 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EC61BF1C05900831032 /* OpenGL.framework */; };
+		D9C49EF21BF1CA4100831032 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EF11BF1CA4100831032 /* WebKit.framework */; };
+		D9C49F041BF1D3B600831032 /* mpprinter.mo in Copy Files */ = {isa = PBXBuildFile; fileRef = D9C49EFC1BF1D2C700831032 /* mpprinter.mo */; };
+		D9C49F061BF1D4CB00831032 /* mpprinter.icns in Resources */ = {isa = PBXBuildFile; fileRef = D9C49F051BF1D4CB00831032 /* mpprinter.icns */; };
+		D9E2D95024AB676A002161FA /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9E2D94E24AB676A002161FA /* buffer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9C49F031BF1D39000831032 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = lang/ja;
+			dstSubfolderSpec = 7;
+			files = (
+				D9C49F041BF1D3B600831032 /* mpprinter.mo in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D959857A24A9001200A7BCC6 /* coordinate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coordinate.cpp; sourceTree = "<group>"; };
+		D959857B24A9001200A7BCC6 /* coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordinate.h; sourceTree = "<group>"; };
+		D959857C24A9001200A7BCC6 /* dpbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dpbuffer.cpp; sourceTree = "<group>"; };
+		D959857D24A9001200A7BCC6 /* dpbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpbuffer.h; sourceTree = "<group>"; };
+		D9BD1A731C0AD687002E06E5 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		D9BD1A741C0AD687002E06E5 /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = config.cpp; sourceTree = "<group>"; };
+		D9BD1A751C0AD687002E06E5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D9BD1A761C0AD687002E06E5 /* ctrl_setting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctrl_setting.cpp; sourceTree = "<group>"; };
+		D9BD1A771C0AD687002E06E5 /* ctrl_setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctrl_setting.h; sourceTree = "<group>"; };
+		D9BD1A781C0AD687002E06E5 /* debugreport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debugreport.cpp; sourceTree = "<group>"; };
+		D9BD1A791C0AD687002E06E5 /* debugreport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debugreport.h; sourceTree = "<group>"; };
+		D9BD1A7A1C0AD687002E06E5 /* errorinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = errorinfo.cpp; sourceTree = "<group>"; };
+		D9BD1A7B1C0AD687002E06E5 /* errorinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errorinfo.h; sourceTree = "<group>"; };
+		D9BD1A7C1C0AD687002E06E5 /* marginbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = marginbox.cpp; sourceTree = "<group>"; };
+		D9BD1A7D1C0AD687002E06E5 /* marginbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marginbox.h; sourceTree = "<group>"; };
+		D9BD1A7E1C0AD687002E06E5 /* mp_model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp_model.cpp; sourceTree = "<group>"; };
+		D9BD1A7F1C0AD687002E06E5 /* mp_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp_model.h; sourceTree = "<group>"; };
+		D9BD1A801C0AD687002E06E5 /* mp_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp_printer.cpp; sourceTree = "<group>"; };
+		D9BD1A811C0AD687002E06E5 /* mp_printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp_printer.h; sourceTree = "<group>"; };
+		D9BD1A821C0AD687002E06E5 /* mp80.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp80.cpp; sourceTree = "<group>"; };
+		D9BD1A831C0AD687002E06E5 /* mp80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp80.h; sourceTree = "<group>"; };
+		D9BD1A841C0AD687002E06E5 /* mp1020.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mp1020.cpp; sourceTree = "<group>"; };
+		D9BD1A851C0AD687002E06E5 /* mp1020.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp1020.h; sourceTree = "<group>"; };
+		D9BD1A881C0AD687002E06E5 /* mpprinter.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpprinter.rc; sourceTree = "<group>"; };
+		D9BD1A891C0AD687002E06E5 /* server_setting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server_setting.cpp; sourceTree = "<group>"; };
+		D9BD1A8A1C0AD687002E06E5 /* server_setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server_setting.h; sourceTree = "<group>"; };
+		D9BD1A8B1C0AD687002E06E5 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		D9BD1A8C1C0AD687002E06E5 /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		D9BD1A8D1C0AD687002E06E5 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		D9BD1A9B1C0AD6FB002E06E5 /* hand_mask.xbm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_mask.xbm; path = ../../src/res/hand_mask.xbm; sourceTree = "<group>"; };
+		D9BD1A9C1C0AD6FB002E06E5 /* hand.xbm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand.xbm; path = ../../src/res/hand.xbm; sourceTree = "<group>"; };
+		D9BD1A9D1C0AD6FB002E06E5 /* magnify_mask.xbm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = magnify_mask.xbm; path = ../../src/res/magnify_mask.xbm; sourceTree = "<group>"; };
+		D9BD1A9E1C0AD6FB002E06E5 /* magnify.xbm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = magnify.xbm; path = ../../src/res/magnify.xbm; sourceTree = "<group>"; };
+		D9BD1A9F1C0AD6FB002E06E5 /* mpprinter.xpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mpprinter.xpm; path = ../../src/res/mpprinter.xpm; sourceTree = "<group>"; };
+		D9BD1AA51C0AD773002E06E5 /* prn_font_l3.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = prn_font_l3.dat; path = ../../font/prn_font_l3.dat; sourceTree = "<group>"; };
+		D9BD1AA61C0AD773002E06E5 /* prn_font_m8.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = prn_font_m8.dat; path = ../../font/prn_font_m8.dat; sourceTree = "<group>"; };
+		D9BD1AA91C0AE0E9002E06E5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D9BD1AAA1C0AE0E9002E06E5 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		D9BD1AD51C0B5C46002E06E5 /* densitybox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = densitybox.cpp; sourceTree = "<group>"; };
+		D9BD1AD61C0B5C46002E06E5 /* densitybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = densitybox.h; sourceTree = "<group>"; };
+		D9C49E571BF1BCA200831032 /* mpprinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mpprinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C49E7A1BF1BD8700831032 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../src/res/Info.plist; sourceTree = "<group>"; };
+		D9C49EBE1BF1C01400831032 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		D9C49EC01BF1C02200831032 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D9C49EC21BF1C02D00831032 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D9C49EC41BF1C03700831032 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D9C49EC61BF1C05900831032 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D9C49EF11BF1CA4100831032 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D9C49EFC1BF1D2C700831032 /* mpprinter.mo */ = {isa = PBXFileReference; lastKnownFileType = file; path = mpprinter.mo; sourceTree = "<group>"; };
+		D9C49EFD1BF1D2C700831032 /* mpprinter.po */ = {isa = PBXFileReference; lastKnownFileType = text; path = mpprinter.po; sourceTree = "<group>"; };
+		D9C49F051BF1D4CB00831032 /* mpprinter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = mpprinter.icns; path = ../../src/res/mpprinter.icns; sourceTree = "<group>"; };
+		D9E2D94E24AB676A002161FA /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		D9E2D94F24AB676A002161FA /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C49E541BF1BCA200831032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C49EC71BF1C05900831032 /* OpenGL.framework in Frameworks */,
+				D9C49EC51BF1C03700831032 /* AudioToolbox.framework in Frameworks */,
+				D9C49EC31BF1C02D00831032 /* Cocoa.framework in Frameworks */,
+				D9C49EC11BF1C02200831032 /* Carbon.framework in Frameworks */,
+				D9C49EBF1BF1C01400831032 /* IOKit.framework in Frameworks */,
+				D9C49EF21BF1CA4100831032 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9C49E4E1BF1BCA200831032 = {
+			isa = PBXGroup;
+			children = (
+				D9C49F071BF1D4E500831032 /* Resources */,
+				D9C49EF01BF1C55F00831032 /* Frameworks */,
+				D9C49E591BF1BCA200831032 /* Sources */,
+				D9C49E581BF1BCA200831032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C49E581BF1BCA200831032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C49E571BF1BCA200831032 /* mpprinter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C49E591BF1BCA200831032 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D9E2D94E24AB676A002161FA /* buffer.cpp */,
+				D9E2D94F24AB676A002161FA /* buffer.h */,
+				D9BD1A731C0AD687002E06E5 /* common.h */,
+				D9BD1A741C0AD687002E06E5 /* config.cpp */,
+				D9BD1A751C0AD687002E06E5 /* config.h */,
+				D959857A24A9001200A7BCC6 /* coordinate.cpp */,
+				D959857B24A9001200A7BCC6 /* coordinate.h */,
+				D9BD1A761C0AD687002E06E5 /* ctrl_setting.cpp */,
+				D9BD1A771C0AD687002E06E5 /* ctrl_setting.h */,
+				D9BD1A781C0AD687002E06E5 /* debugreport.cpp */,
+				D9BD1A791C0AD687002E06E5 /* debugreport.h */,
+				D9BD1AD51C0B5C46002E06E5 /* densitybox.cpp */,
+				D9BD1AD61C0B5C46002E06E5 /* densitybox.h */,
+				D959857C24A9001200A7BCC6 /* dpbuffer.cpp */,
+				D959857D24A9001200A7BCC6 /* dpbuffer.h */,
+				D9BD1A7A1C0AD687002E06E5 /* errorinfo.cpp */,
+				D9BD1A7B1C0AD687002E06E5 /* errorinfo.h */,
+				D9BD1AA91C0AE0E9002E06E5 /* main.cpp */,
+				D9BD1AAA1C0AE0E9002E06E5 /* main.h */,
+				D9BD1A7C1C0AD687002E06E5 /* marginbox.cpp */,
+				D9BD1A7D1C0AD687002E06E5 /* marginbox.h */,
+				D9BD1A7E1C0AD687002E06E5 /* mp_model.cpp */,
+				D9BD1A7F1C0AD687002E06E5 /* mp_model.h */,
+				D9BD1A801C0AD687002E06E5 /* mp_printer.cpp */,
+				D9BD1A811C0AD687002E06E5 /* mp_printer.h */,
+				D9BD1A821C0AD687002E06E5 /* mp80.cpp */,
+				D9BD1A831C0AD687002E06E5 /* mp80.h */,
+				D9BD1A841C0AD687002E06E5 /* mp1020.cpp */,
+				D9BD1A851C0AD687002E06E5 /* mp1020.h */,
+				D9BD1A881C0AD687002E06E5 /* mpprinter.rc */,
+				D9BD1A891C0AD687002E06E5 /* server_setting.cpp */,
+				D9BD1A8A1C0AD687002E06E5 /* server_setting.h */,
+				D9BD1A8B1C0AD687002E06E5 /* server.cpp */,
+				D9BD1A8C1C0AD687002E06E5 /* server.h */,
+				D9BD1A8D1C0AD687002E06E5 /* version.h */,
+			);
+			name = Sources;
+			path = ../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		D9C49EF01BF1C55F00831032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9C49EF11BF1CA4100831032 /* WebKit.framework */,
+				D9C49EC61BF1C05900831032 /* OpenGL.framework */,
+				D9C49EC41BF1C03700831032 /* AudioToolbox.framework */,
+				D9C49EC21BF1C02D00831032 /* Cocoa.framework */,
+				D9C49EC01BF1C02200831032 /* Carbon.framework */,
+				D9C49EBE1BF1C01400831032 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C49EFA1BF1D2C700831032 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				D9C49EFB1BF1D2C700831032 /* ja */,
+			);
+			name = lang;
+			path = ../../lang;
+			sourceTree = "<group>";
+		};
+		D9C49EFB1BF1D2C700831032 /* ja */ = {
+			isa = PBXGroup;
+			children = (
+				D9C49EFC1BF1D2C700831032 /* mpprinter.mo */,
+				D9C49EFD1BF1D2C700831032 /* mpprinter.po */,
+			);
+			path = ja;
+			sourceTree = "<group>";
+		};
+		D9C49F071BF1D4E500831032 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9C49E7A1BF1BD8700831032 /* Info.plist */,
+				D9C49F051BF1D4CB00831032 /* mpprinter.icns */,
+				D9BD1A9B1C0AD6FB002E06E5 /* hand_mask.xbm */,
+				D9BD1A9C1C0AD6FB002E06E5 /* hand.xbm */,
+				D9BD1A9D1C0AD6FB002E06E5 /* magnify_mask.xbm */,
+				D9BD1A9E1C0AD6FB002E06E5 /* magnify.xbm */,
+				D9BD1A9F1C0AD6FB002E06E5 /* mpprinter.xpm */,
+				D9BD1AA51C0AD773002E06E5 /* prn_font_l3.dat */,
+				D9BD1AA61C0AD773002E06E5 /* prn_font_m8.dat */,
+				D9C49EFA1BF1D2C700831032 /* lang */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C49E561BF1BCA200831032 /* mpprinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C49E741BF1BCA300831032 /* Build configuration list for PBXNativeTarget "mpprinter" */;
+			buildPhases = (
+				D9C49E531BF1BCA200831032 /* Sources */,
+				D9C49E541BF1BCA200831032 /* Frameworks */,
+				D9C49E551BF1BCA200831032 /* Resources */,
+				D9C49F031BF1D39000831032 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mpprinter;
+			productName = mpprinter;
+			productReference = D9C49E571BF1BCA200831032 /* mpprinter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C49E4F1BF1BCA200831032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Sasaji;
+				TargetAttributes = {
+					D9C49E561BF1BCA200831032 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D9C49E521BF1BCA200831032 /* Build configuration list for PBXProject "mpprinter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9C49E4E1BF1BCA200831032;
+			productRefGroup = D9C49E581BF1BCA200831032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C49E561BF1BCA200831032 /* mpprinter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C49E551BF1BCA200831032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BD1A981C0AD687002E06E5 /* mpprinter.rc in Resources */,
+				D9C49F061BF1D4CB00831032 /* mpprinter.icns in Resources */,
+				D9BD1AA71C0AD785002E06E5 /* prn_font_l3.dat in Resources */,
+				D9BD1AA81C0AD788002E06E5 /* prn_font_m8.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C49E531BF1BCA200831032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D959857F24A9001200A7BCC6 /* dpbuffer.cpp in Sources */,
+				D9BD1A931C0AD687002E06E5 /* mp_model.cpp in Sources */,
+				D9BD1A911C0AD687002E06E5 /* errorinfo.cpp in Sources */,
+				D9BD1A8E1C0AD687002E06E5 /* config.cpp in Sources */,
+				D959857E24A9001200A7BCC6 /* coordinate.cpp in Sources */,
+				D9E2D95024AB676A002161FA /* buffer.cpp in Sources */,
+				D9BD1A961C0AD687002E06E5 /* mp1020.cpp in Sources */,
+				D9BD1A941C0AD687002E06E5 /* mp_printer.cpp in Sources */,
+				D9BD1AD71C0B5C46002E06E5 /* densitybox.cpp in Sources */,
+				D9BD1A9A1C0AD687002E06E5 /* server.cpp in Sources */,
+				D9BD1A8F1C0AD687002E06E5 /* ctrl_setting.cpp in Sources */,
+				D9BD1A901C0AD687002E06E5 /* debugreport.cpp in Sources */,
+				D9BD1A991C0AD687002E06E5 /* server_setting.cpp in Sources */,
+				D9BD1AAB1C0AE0E9002E06E5 /* main.cpp in Sources */,
+				D9BD1A951C0AD687002E06E5 /* mp80.cpp in Sources */,
+				D9BD1A921C0AD687002E06E5 /* marginbox.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D9C49E721BF1BCA300831032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(WX_WIDGET_INCLUDE)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(WX_WIDGET_LIB)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(WX_WIDGET_CFLAGS)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(WX_WIDGET_LIBS)",
+					"$(WX_WIDGET_LDFLAGS)",
+				);
+				SDKROOT = macosx;
+				WX_H = wx_osx_cocoau_;
+				WX_VER = 3.1;
+				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.1.2/";
+				WX_WIDGET_CFLAGS = "-D_FILE_OFFSET_BITS=64 -DwxDEBUG_LEVEL=0 -D__WXMAC__ -D__WXOSX__ -D__WXOSX_COCOA__";
+				WX_WIDGET_DIR = "$(WX_WIDGET_BASE)build_debug_static_unicode/";
+				WX_WIDGET_INCLUDE = "$(WX_WIDGET_DIR)lib/wx/include/osx_cocoa-unicode-static-$(WX_VER) $(WX_WIDGET_BASE)include";
+				WX_WIDGET_LDFLAGS = "-lz -lpthread -liconv -lexpat";
+				WX_WIDGET_LIB = "$(WX_WIDGET_DIR)lib/";
+				WX_WIDGET_LIBS = "-lwxscintilla-$(WX_VER) -lwxregexu-$(WX_VER) -lwxtiff-$(WX_VER) -lwxjpeg-$(WX_VER) -lwxpng-$(WX_VER) -lwx_baseu-$(WX_VER) -lwx_baseu_xml-$(WX_VER) -lwx_baseu_net-$(WX_VER) -l$(WX_H)adv-$(WX_VER) -l$(WX_H)aui-$(WX_VER) -l$(WX_H)core-$(WX_VER) -l$(WX_H)gl-$(WX_VER) -l$(WX_H)html-$(WX_VER) -l$(WX_H)media-$(WX_VER) -l$(WX_H)propgrid-$(WX_VER) -l$(WX_H)qa-$(WX_VER) -l$(WX_H)ribbon-$(WX_VER) -l$(WX_H)richtext-$(WX_VER) -l$(WX_H)stc-$(WX_VER) -l$(WX_H)xrc-$(WX_VER)";
+			};
+			name = Debug;
+		};
+		D9C49E731BF1BCA300831032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(WX_WIDGET_INCLUDE)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(WX_WIDGET_LIB)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(WX_WIDGET_CFLAGS)";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"$(WX_WIDGET_LIBS)",
+					"$(WX_WIDGET_LDFLAGS)",
+				);
+				SDKROOT = macosx;
+				WX_H = wx_osx_cocoau_;
+				WX_VER = 3.1;
+				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.1.2/";
+				WX_WIDGET_CFLAGS = "-D_FILE_OFFSET_BITS=64 -DwxDEBUG_LEVEL=0 -D__WXMAC__ -D__WXOSX__ -D__WXOSX_COCOA__";
+				WX_WIDGET_DIR = "$(WX_WIDGET_BASE)build_debug_static_unicode/";
+				WX_WIDGET_INCLUDE = "$(WX_WIDGET_DIR)lib/wx/include/osx_cocoa-unicode-static-$(WX_VER) $(WX_WIDGET_BASE)include";
+				WX_WIDGET_LDFLAGS = "-lz -lpthread -liconv -lexpat";
+				WX_WIDGET_LIB = "$(WX_WIDGET_DIR)lib/";
+				WX_WIDGET_LIBS = "-lwxscintilla-$(WX_VER) -lwxregexu-$(WX_VER) -lwxtiff-$(WX_VER) -lwxjpeg-$(WX_VER) -lwxpng-$(WX_VER) -lwx_baseu-$(WX_VER) -lwx_baseu_xml-$(WX_VER) -lwx_baseu_net-$(WX_VER) -l$(WX_H)adv-$(WX_VER) -l$(WX_H)aui-$(WX_VER) -l$(WX_H)core-$(WX_VER) -l$(WX_H)gl-$(WX_VER) -l$(WX_H)html-$(WX_VER) -l$(WX_H)media-$(WX_VER) -l$(WX_H)propgrid-$(WX_VER) -l$(WX_H)qa-$(WX_VER) -l$(WX_H)ribbon-$(WX_VER) -l$(WX_H)richtext-$(WX_VER) -l$(WX_H)stc-$(WX_VER) -l$(WX_H)xrc-$(WX_VER)";
+			};
+			name = Release;
+		};
+		D9C49E751BF1BCA300831032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/../../src/res/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9C49E761BF1BCA300831032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/../../src/res/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C49E521BF1BCA200831032 /* Build configuration list for PBXProject "mpprinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C49E721BF1BCA300831032 /* Debug */,
+				D9C49E731BF1BCA300831032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C49E741BF1BCA300831032 /* Build configuration list for PBXNativeTarget "mpprinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C49E751BF1BCA300831032 /* Debug */,
+				D9C49E761BF1BCA300831032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9C49E4F1BF1BCA200831032 /* Project object */;
+}

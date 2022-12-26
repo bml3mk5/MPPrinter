@@ -1,0 +1,411 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mpprinter\n"
+"POT-Creation-Date: 2020-07-09 19:32+0900\n"
+"PO-Revision-Date: 2020-07-09 19:32+0900\n"
+"Last-Translator: Sasaji <s-sasaji@ddo.jp>\n"
+"Language-Team: \n"
+"Language: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_TX\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: src\n"
+
+#: src/ctrl_setting.cpp:23
+msgid "Settings"
+msgstr "設定"
+
+#: src/ctrl_setting.cpp:31
+msgid "HI type"
+msgstr "HI系"
+
+#: src/ctrl_setting.cpp:32
+msgid "EP type"
+msgstr "EP系"
+
+#: src/ctrl_setting.cpp:50 src/ctrl_setting.cpp:97
+msgid "Newline height"
+msgstr "改行幅"
+
+#: src/ctrl_setting.cpp:51 src/ctrl_setting.cpp:98
+msgid "1/6inch"
+msgstr "1/6インチ"
+
+#: src/ctrl_setting.cpp:52 src/ctrl_setting.cpp:99
+msgid "1/8inch"
+msgstr "1/8インチ"
+
+#: src/ctrl_setting.cpp:53 src/ctrl_setting.cpp:100
+msgid "n/144inch"
+msgstr "n/144インチ"
+
+#: src/ctrl_setting.cpp:61 src/ctrl_setting.cpp:112
+msgid "Charactor width"
+msgstr "文字幅"
+
+#: src/ctrl_setting.cpp:62 src/ctrl_setting.cpp:113
+msgid "Normal"
+msgstr "標準"
+
+#: src/ctrl_setting.cpp:63 src/ctrl_setting.cpp:114
+msgid "Wide"
+msgstr "拡大"
+
+#: src/ctrl_setting.cpp:68 src/ctrl_setting.cpp:119
+msgid "Line width"
+msgstr "行幅"
+
+#: src/ctrl_setting.cpp:69 src/ctrl_setting.cpp:120
+msgid "132 chars"
+msgstr "132文字"
+
+#: src/ctrl_setting.cpp:70 src/ctrl_setting.cpp:121
+msgid "80 chars"
+msgstr "80文字"
+
+#: src/ctrl_setting.cpp:71
+msgid "64 chars"
+msgstr "64文字"
+
+#: src/ctrl_setting.cpp:77 src/ctrl_setting.cpp:133
+msgid "Charactor code set"
+msgstr "キャラクターコード"
+
+#: src/ctrl_setting.cpp:78
+msgid "SI(interace)"
+msgstr "SI(インターレース)"
+
+#: src/ctrl_setting.cpp:79
+msgid "SO(non-interace)"
+msgstr "SO(ノンインターレース)"
+
+#: src/ctrl_setting.cpp:126
+msgid "CPI"
+msgstr "CPI"
+
+#: src/ctrl_setting.cpp:127
+msgid "10cpi"
+msgstr "10cpi"
+
+#: src/ctrl_setting.cpp:128
+msgid "12cpi"
+msgstr "12cpi"
+
+#: src/ctrl_setting.cpp:136
+msgid "L3 Graph"
+msgstr "L3記号"
+
+#: src/ctrl_setting.cpp:137
+msgid "L3 Hiragana"
+msgstr "L3ひらがな"
+
+#: src/ctrl_setting.cpp:142
+msgid "FM-8/7"
+msgstr "FM-8/7"
+
+#: src/ctrl_setting.cpp:146
+msgid "PC-8001"
+msgstr "PC-8001"
+
+#: src/ctrl_setting.cpp:172 src/ctrl_setting.cpp:240
+msgid "inch"
+msgstr "インチ"
+
+#: src/densitybox.cpp:17
+msgid "Color Density"
+msgstr "色の濃さ"
+
+#: src/densitybox.cpp:26
+msgid "Light"
+msgstr "薄い"
+
+#: src/densitybox.cpp:29
+msgid "Dark"
+msgstr "濃い"
+
+#: src/densitybox.cpp:33
+msgid "Reverse Color"
+msgstr "色を反転"
+
+#: src/errorinfo.cpp:31
+msgid "File not found."
+msgstr "ファイルがみつかりません。"
+
+#: src/errorinfo.cpp:35
+msgid "Cannot write file."
+msgstr "ファイルを出力できません。"
+
+#: src/errorinfo.cpp:39
+msgid "File is empty."
+msgstr "ファイルが空です。"
+
+#: src/errorinfo.cpp:43
+msgid "Cannot specify the same file."
+msgstr "同じファイルを指定することはできません。"
+
+#: src/errorinfo.cpp:47
+msgid "Put the font file on the program folder."
+msgstr "フォントファイルをプログラムと同じフォルダに置いてください。"
+
+#: src/errorinfo.cpp:51
+msgid "Printing failed."
+msgstr "印刷に失敗しました。"
+
+#: src/errorinfo.cpp:55
+msgid "Cannot preview. Please check your printer setting."
+msgstr "プレビューできません。プリンターの設定を確認してください。"
+
+#: src/errorinfo.cpp:59
+msgid "Cannot start server."
+msgstr "サーバーの起動に失敗しました。"
+
+#: src/errorinfo.cpp:63
+msgid "Connection failed."
+msgstr "接続に失敗しました。"
+
+#: src/errorinfo.cpp:67
+msgid "System error occured."
+msgstr "システムエラーが発生しました。"
+
+#: src/errorinfo.cpp:71
+#, c-format
+msgid "Unknown error: %d"
+msgstr "不明なエラー: %d"
+
+#: src/errorinfo.cpp:108 src/errorinfo.cpp:109
+msgid "Error"
+msgstr "エラー"
+
+#: src/errorinfo.cpp:112 src/errorinfo.cpp:113
+msgid "Warning"
+msgstr "警告"
+
+#: src/main.cpp:142
+msgid "Hide mpprinter"
+msgstr "mpprinterを隠す"
+
+#: src/main.cpp:142
+msgid "Hide Others"
+msgstr "ほかを隠す"
+
+#: src/main.cpp:142
+msgid "Show All"
+msgstr "すべて表示"
+
+#: src/main.cpp:142
+msgid "Quit mpprinter"
+msgstr "mpprinterを終了"
+
+#: src/main.cpp:142
+msgid "Services"
+msgstr "サービス"
+
+#: src/main.cpp:142
+msgid "Preferences…"
+msgstr "環境設定…"
+
+#: src/main.cpp:143
+msgid "OK"
+msgstr ""
+
+#: src/main.cpp:143
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/main.cpp:169
+msgid "&Open..."
+msgstr "開く(&O)..."
+
+#: src/main.cpp:170
+msgid "&Close"
+msgstr "閉じる(&C)"
+
+#: src/main.cpp:172
+msgid "Page Set&up..."
+msgstr "ページ設定(&U)..."
+
+#: src/main.cpp:173
+msgid "&Margin Setup..."
+msgstr "マージン設定(&M)..."
+
+#: src/main.cpp:174
+msgid "Color &Density..."
+msgstr "色の濃さ(&D)..."
+
+#: src/main.cpp:176
+msgid "Print Pre&view"
+msgstr "印刷プレビュー(&V)"
+
+#: src/main.cpp:177
+msgid "&Print..."
+msgstr "印刷(&P)..."
+
+#: src/main.cpp:181
+msgid "&Reccent Files"
+msgstr "最近使用したファイル(&R)"
+
+#: src/main.cpp:183
+msgid "E&xit"
+msgstr "終了(&X)"
+
+#: src/main.cpp:185
+msgid "Zoom &In"
+msgstr "拡大(&I)"
+
+#: src/main.cpp:186
+msgid "Zoom &Out"
+msgstr "縮小(&O)"
+
+#: src/main.cpp:188
+msgid "Rotate &Anticlockwise"
+msgstr "回転 反時計回り(&A)"
+
+#: src/main.cpp:189
+msgid "Rotate &Clockwise"
+msgstr "回転 時計回り(&C)"
+
+#: src/main.cpp:191
+msgid "&Default Screen"
+msgstr "デフォルト画面(&D)"
+
+#: src/main.cpp:193
+msgid "&Refresh Screen"
+msgstr "画面を更新(&R)"
+
+#: src/main.cpp:195
+msgid "&HI Type"
+msgstr "HI系(&H)"
+
+#: src/main.cpp:196
+msgid "&EP Type"
+msgstr "EP系(&E)"
+
+#: src/main.cpp:198
+msgid "&Reset"
+msgstr "リセット(&R)"
+
+#: src/main.cpp:199
+msgid "&Settings..."
+msgstr "設定(&S)..."
+
+#: src/main.cpp:201
+msgid "&Enable Server"
+msgstr "サーバー有効(&E)"
+
+#: src/main.cpp:206
+msgid "&Server Settings..."
+msgstr "サーバー設定(&S)..."
+
+#: src/main.cpp:208
+msgid "About mpprinter..."
+msgstr "mpprinterについて..."
+
+#: src/main.cpp:215
+msgid "&File"
+msgstr "ファイル(&F)"
+
+#: src/main.cpp:216
+msgid "&View"
+msgstr "表示(&V)"
+
+#: src/main.cpp:217
+msgid "&Control"
+msgstr "コントロール(&C)"
+
+#: src/main.cpp:218
+msgid "&Other"
+msgstr "その他(&O)"
+
+#: src/main.cpp:219
+msgid "&Help"
+msgstr "ヘルプ(&H)"
+
+#: src/main.cpp:281
+msgid "Open file"
+msgstr "ファイルを開く"
+
+#: src/main.cpp:284
+msgid ""
+"Supported files (*.bas;*.lpt;*.txt)|*.bas;*.lpt;*.txt|All files (*.*)|*.*"
+msgstr ""
+"Supported files (*.bas;*.lpt;*.txt)|*.bas;*.lpt;*.txt|All files (*.*)|*.*"
+
+#: src/main.cpp:1078
+msgid "About..."
+msgstr "About..."
+
+#: src/marginbox.cpp:18
+msgid "Margins"
+msgstr "マージン設定"
+
+#: src/marginbox.cpp:28
+msgid "Top:"
+msgstr "上:"
+
+#: src/marginbox.cpp:30 src/marginbox.cpp:35
+msgid "mm"
+msgstr "mm"
+
+#: src/marginbox.cpp:33
+msgid "Bottom:"
+msgstr "下:"
+
+#: src/marginbox.cpp:76
+msgid "Size is too large."
+msgstr "サイズが大きすぎます。"
+
+#: src/mp_printer.cpp:1937
+msgid "Page "
+msgstr "Page "
+
+#: src/mp_printer.cpp:2669
+msgid "Preview"
+msgstr "プレビュー"
+
+#: src/server.cpp:50
+msgid "Could not listen at the specified port."
+msgstr "指定したポート番号を使用できませんでした。"
+
+#: src/server.cpp:57
+msgid "Couldn't get the address we bound to"
+msgstr "アドレスを取得できませんでした。"
+
+#: src/server_setting.cpp:18
+msgid "Server settings"
+msgstr "サーバー設定"
+
+#: src/server_setting.cpp:26
+msgid "Hostname:"
+msgstr "ホスト名:"
+
+#: src/server_setting.cpp:31
+msgid "Port:"
+msgstr "ポート番号:"
+
+#: src/server_setting.cpp:40
+msgid "Reverse received data."
+msgstr "受信データを反転する。"
+
+#: src/server_setting.cpp:45
+msgid "Echo back received data."
+msgstr "受信したデータをエコーバックする。"
+
+#: src/server_setting.cpp:50
+msgid "Delay Emulation"
+msgstr "遅延エミュレーション"
+
+#: src/server_setting.cpp:53
+msgid "Send ACK(0x06) code when received data."
+msgstr "データを受信したらACK(0x06)コードを送信する。"
+
+#: src/server_setting.cpp:59
+msgid "Delay:"
+msgstr "遅延:"
+
+#: src/server_setting.cpp:61
+msgid "msec."
+msgstr "ミリ秒"

@@ -1,0 +1,31 @@
+#include "version.h"
+
+// Version Information resources
+1 VERSIONINFO
+FILEVERSION     APP_VER_MAJOR,APP_VER_MINOR,APP_VER_REV,APP_VER_BUILD
+PRODUCTVERSION  APP_VER_MAJOR,APP_VER_MINOR,APP_VER_REV,APP_VER_BUILD
+FILEFLAGSMASK   0x0000003F
+FILEFLAGS       0x00000000
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "041103a4"
+        {
+            VALUE "FileVersion", APPLICATION_VERSION
+            VALUE "ProductVersion", APPLICATION_VERSION ""PLATFORM""
+            VALUE "FileDescription", "mpprinter"
+            VALUE "LegalCopyright", APP_COPYRIGHT
+            VALUE "OriginalFilename", "mpprinter.exe"
+            VALUE "ProductName", "mpprinter"
+            VALUE "InternalName", "mpprinter"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0411, 0x03A4
+    }
+}
+
+mpprinter ICON "res/mpprinter.ico"
+
+#include "wx/msw/wx.rc"
