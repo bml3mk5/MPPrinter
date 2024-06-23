@@ -6,7 +6,7 @@
 #define _COMMON_H_
 
 #include <wx/platform.h>
-#include "version.h"
+//#include "version.h"
 #include "debugreport.h"
 
 #if defined(__WXMSW__)

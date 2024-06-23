@@ -8,10 +8,11 @@ APPLICATION_VERSION=0.5.0
 CDEFS=
 DBG_CDEFS=-D_DEBUG -D_DEBUG_LOG
 
-ARCH=-arch i386 -arch x86_64
-MACVERMIN=-mmacosx-version-min=10.7
+#ARCH=-arch i386 -arch x86_64
+ARCH=-arch arm64 -arch x86_64
+MACVERMIN=-mmacosx-version-min=10.11
 
-WXDIR=../../../../Devel/wxWidgets-3.1.2
+WXDIR=../../../../Devel/wxWidgets-3.2.4
 WXCONFIG_SH=$(WXDIR)/build_release_shared_unicode/wx-config
 WXCONFIG_ST=$(WXDIR)/build_release_static_unicode/wx-config
 WXCONFIG_DBG=$(WXDIR)/build_debug_static_unicode/wx-config

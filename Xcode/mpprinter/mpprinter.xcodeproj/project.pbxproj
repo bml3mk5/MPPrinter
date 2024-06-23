@@ -33,6 +33,7 @@
 		D9C49EF21BF1CA4100831032 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C49EF11BF1CA4100831032 /* WebKit.framework */; };
 		D9C49F041BF1D3B600831032 /* mpprinter.mo in Copy Files */ = {isa = PBXBuildFile; fileRef = D9C49EFC1BF1D2C700831032 /* mpprinter.mo */; };
 		D9C49F061BF1D4CB00831032 /* mpprinter.icns in Resources */ = {isa = PBXBuildFile; fileRef = D9C49F051BF1D4CB00831032 /* mpprinter.icns */; };
+		D9DDCEB12B597CDE00590D15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDCEB02B597CDE00590D15 /* QuartzCore.framework */; };
 		D9E2D95024AB676A002161FA /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9E2D94E24AB676A002161FA /* buffer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		D9C49EFC1BF1D2C700831032 /* mpprinter.mo */ = {isa = PBXFileReference; lastKnownFileType = file; path = mpprinter.mo; sourceTree = "<group>"; };
 		D9C49EFD1BF1D2C700831032 /* mpprinter.po */ = {isa = PBXFileReference; lastKnownFileType = text; path = mpprinter.po; sourceTree = "<group>"; };
 		D9C49F051BF1D4CB00831032 /* mpprinter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = mpprinter.icns; path = ../../src/res/mpprinter.icns; sourceTree = "<group>"; };
+		D9DDCEB02B597CDE00590D15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D9E2D94E24AB676A002161FA /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
 		D9E2D94F24AB676A002161FA /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DDCEB12B597CDE00590D15 /* QuartzCore.framework in Frameworks */,
 				D9C49EC71BF1C05900831032 /* OpenGL.framework in Frameworks */,
 				D9C49EC51BF1C03700831032 /* AudioToolbox.framework in Frameworks */,
 				D9C49EC31BF1C02D00831032 /* Cocoa.framework in Frameworks */,
@@ -187,6 +190,7 @@
 		D9C49EF01BF1C55F00831032 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9DDCEB02B597CDE00590D15 /* QuartzCore.framework */,
 				D9C49EF11BF1CA4100831032 /* WebKit.framework */,
 				D9C49EC61BF1C05900831032 /* OpenGL.framework */,
 				D9C49EC41BF1C03700831032 /* AudioToolbox.framework */,
@@ -272,6 +276,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -367,7 +372,7 @@
 					"$(WX_WIDGET_INCLUDE)",
 				);
 				LIBRARY_SEARCH_PATHS = "$(WX_WIDGET_LIB)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(WX_WIDGET_CFLAGS)";
@@ -378,8 +383,8 @@
 				);
 				SDKROOT = macosx;
 				WX_H = wx_osx_cocoau_;
-				WX_VER = 3.1;
-				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.1.2/";
+				WX_VER = 3.2;
+				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.2.4/";
 				WX_WIDGET_CFLAGS = "-D_FILE_OFFSET_BITS=64 -DwxDEBUG_LEVEL=0 -D__WXMAC__ -D__WXOSX__ -D__WXOSX_COCOA__";
 				WX_WIDGET_DIR = "$(WX_WIDGET_BASE)build_debug_static_unicode/";
 				WX_WIDGET_INCLUDE = "$(WX_WIDGET_DIR)lib/wx/include/osx_cocoa-unicode-static-$(WX_VER) $(WX_WIDGET_BASE)include";
@@ -424,7 +429,7 @@
 					"$(WX_WIDGET_INCLUDE)",
 				);
 				LIBRARY_SEARCH_PATHS = "$(WX_WIDGET_LIB)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(WX_WIDGET_CFLAGS)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
@@ -434,8 +439,8 @@
 				);
 				SDKROOT = macosx;
 				WX_H = wx_osx_cocoau_;
-				WX_VER = 3.1;
-				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.1.2/";
+				WX_VER = 3.2;
+				WX_WIDGET_BASE = "$(HOME)/Devel/wxWidgets-3.2.4/";
 				WX_WIDGET_CFLAGS = "-D_FILE_OFFSET_BITS=64 -DwxDEBUG_LEVEL=0 -D__WXMAC__ -D__WXOSX__ -D__WXOSX_COCOA__";
 				WX_WIDGET_DIR = "$(WX_WIDGET_BASE)build_debug_static_unicode/";
 				WX_WIDGET_INCLUDE = "$(WX_WIDGET_DIR)lib/wx/include/osx_cocoa-unicode-static-$(WX_VER) $(WX_WIDGET_BASE)include";
