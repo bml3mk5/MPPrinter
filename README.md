@@ -6,14 +6,14 @@
 
 ### [ダウンロード](https://github.com/bml3mk5/MPPrinter/releases)
 
-### [ドキュメント](../../tree/main/docs)
+### [ドキュメント](../../tree/master/docs)
 
 ------------------------------------------------------------------------------
 ### This software is a printer emulator for viewing and printing data files using old-fashioned printer fonts.
 
 ### [Downloads](https://github.com/bml3mk5/MPPrinter/releases)
 
-### [Documents(Japanese)](../../tree/main/docs)
+### [Documents(Japanese)](../../tree/master/docs)
 
 ------------------------------------------------------------------------------
 
