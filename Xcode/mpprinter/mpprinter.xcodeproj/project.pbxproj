@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D924DDF3295311FB0063100E /* mymenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D924DDF2295311FB0063100E /* mymenu.cpp */; };
 		D959857E24A9001200A7BCC6 /* coordinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D959857A24A9001200A7BCC6 /* coordinate.cpp */; };
 		D959857F24A9001200A7BCC6 /* dpbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D959857C24A9001200A7BCC6 /* dpbuffer.cpp */; };
 		D9BD1A8E1C0AD687002E06E5 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1A741C0AD687002E06E5 /* config.cpp */; };
@@ -52,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D924DDF1295311FB0063100E /* mymenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mymenu.h; sourceTree = "<group>"; };
+		D924DDF2295311FB0063100E /* mymenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mymenu.cpp; sourceTree = "<group>"; };
 		D959857A24A9001200A7BCC6 /* coordinate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coordinate.cpp; sourceTree = "<group>"; };
 		D959857B24A9001200A7BCC6 /* coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordinate.h; sourceTree = "<group>"; };
 		D959857C24A9001200A7BCC6 /* dpbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dpbuffer.cpp; sourceTree = "<group>"; };
@@ -147,40 +150,42 @@
 		D9C49E591BF1BCA200831032 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D9E2D94E24AB676A002161FA /* buffer.cpp */,
 				D9E2D94F24AB676A002161FA /* buffer.h */,
+				D9E2D94E24AB676A002161FA /* buffer.cpp */,
 				D9BD1A731C0AD687002E06E5 /* common.h */,
-				D9BD1A741C0AD687002E06E5 /* config.cpp */,
 				D9BD1A751C0AD687002E06E5 /* config.h */,
-				D959857A24A9001200A7BCC6 /* coordinate.cpp */,
+				D9BD1A741C0AD687002E06E5 /* config.cpp */,
 				D959857B24A9001200A7BCC6 /* coordinate.h */,
-				D9BD1A761C0AD687002E06E5 /* ctrl_setting.cpp */,
+				D959857A24A9001200A7BCC6 /* coordinate.cpp */,
 				D9BD1A771C0AD687002E06E5 /* ctrl_setting.h */,
-				D9BD1A781C0AD687002E06E5 /* debugreport.cpp */,
+				D9BD1A761C0AD687002E06E5 /* ctrl_setting.cpp */,
 				D9BD1A791C0AD687002E06E5 /* debugreport.h */,
-				D9BD1AD51C0B5C46002E06E5 /* densitybox.cpp */,
+				D9BD1A781C0AD687002E06E5 /* debugreport.cpp */,
 				D9BD1AD61C0B5C46002E06E5 /* densitybox.h */,
-				D959857C24A9001200A7BCC6 /* dpbuffer.cpp */,
+				D9BD1AD51C0B5C46002E06E5 /* densitybox.cpp */,
 				D959857D24A9001200A7BCC6 /* dpbuffer.h */,
-				D9BD1A7A1C0AD687002E06E5 /* errorinfo.cpp */,
+				D959857C24A9001200A7BCC6 /* dpbuffer.cpp */,
 				D9BD1A7B1C0AD687002E06E5 /* errorinfo.h */,
-				D9BD1AA91C0AE0E9002E06E5 /* main.cpp */,
+				D9BD1A7A1C0AD687002E06E5 /* errorinfo.cpp */,
 				D9BD1AAA1C0AE0E9002E06E5 /* main.h */,
-				D9BD1A7C1C0AD687002E06E5 /* marginbox.cpp */,
+				D9BD1AA91C0AE0E9002E06E5 /* main.cpp */,
 				D9BD1A7D1C0AD687002E06E5 /* marginbox.h */,
-				D9BD1A7E1C0AD687002E06E5 /* mp_model.cpp */,
+				D9BD1A7C1C0AD687002E06E5 /* marginbox.cpp */,
 				D9BD1A7F1C0AD687002E06E5 /* mp_model.h */,
-				D9BD1A801C0AD687002E06E5 /* mp_printer.cpp */,
+				D9BD1A7E1C0AD687002E06E5 /* mp_model.cpp */,
 				D9BD1A811C0AD687002E06E5 /* mp_printer.h */,
-				D9BD1A821C0AD687002E06E5 /* mp80.cpp */,
+				D9BD1A801C0AD687002E06E5 /* mp_printer.cpp */,
 				D9BD1A831C0AD687002E06E5 /* mp80.h */,
-				D9BD1A841C0AD687002E06E5 /* mp1020.cpp */,
+				D9BD1A821C0AD687002E06E5 /* mp80.cpp */,
 				D9BD1A851C0AD687002E06E5 /* mp1020.h */,
+				D9BD1A841C0AD687002E06E5 /* mp1020.cpp */,
 				D9BD1A881C0AD687002E06E5 /* mpprinter.rc */,
-				D9BD1A891C0AD687002E06E5 /* server_setting.cpp */,
-				D9BD1A8A1C0AD687002E06E5 /* server_setting.h */,
-				D9BD1A8B1C0AD687002E06E5 /* server.cpp */,
+				D924DDF1295311FB0063100E /* mymenu.h */,
+				D924DDF2295311FB0063100E /* mymenu.cpp */,
 				D9BD1A8C1C0AD687002E06E5 /* server.h */,
+				D9BD1A8B1C0AD687002E06E5 /* server.cpp */,
+				D9BD1A8A1C0AD687002E06E5 /* server_setting.h */,
+				D9BD1A891C0AD687002E06E5 /* server_setting.cpp */,
 				D9BD1A8D1C0AD687002E06E5 /* version.h */,
 			);
 			name = Sources;
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D924DDF3295311FB0063100E /* mymenu.cpp in Sources */,
 				D959857F24A9001200A7BCC6 /* dpbuffer.cpp in Sources */,
 				D9BD1A931C0AD687002E06E5 /* mp_model.cpp in Sources */,
 				D9BD1A911C0AD687002E06E5 /* errorinfo.cpp in Sources */,

@@ -26,6 +26,7 @@ class MpPrinterPanel;
 class MpPrinterFileDialog;
 class MpPrinterFileDropTarget;
 class MpPrinterServer;
+class MyMenu;
 
 #define SCROLLBAR_UNIT	2
 
@@ -55,12 +56,12 @@ class MpPrinterFrame: public wxFrame
 {
 private:
 	// gui
-	wxMenu *menuFile;
-	wxMenu *menuRecentFiles;
-	wxMenu *menuView;
-	wxMenu *menuControl;
-	wxMenu *menuOther;
-	wxMenu *menuHelp;
+	MyMenu *menuFile;
+	MyMenu *menuRecentFiles;
+	MyMenu *menuView;
+	MyMenu *menuControl;
+	MyMenu *menuOther;
+	MyMenu *menuHelp;
 	MpPrinterPanel *panel;
 
 	MP_PRINTER *mpri;
@@ -127,7 +128,7 @@ public:
 	void SetFocus();
 	void Rotate(int direction);
 	void InitScreen();
-	void Refresh();
+	void RefreshAll();
 
 	bool StartServer();
 	void StopServer();

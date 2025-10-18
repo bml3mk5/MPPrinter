@@ -1,6 +1,8 @@
 ﻿/// @file errorinfo.h
 ///
-/// errorinfo.h
+/// @brief エラー情報
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #ifndef _ERRORINFO_H_
 #define _ERRORINFO_H_

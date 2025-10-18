@@ -2,6 +2,8 @@
 ///
 /// @brief config
 ///
+/// @author Copyright (c) Sasaji. All rights reserved.
+///
 #include "config.h"
 #include <wx/filename.h>
 #include <wx/fileconf.h>

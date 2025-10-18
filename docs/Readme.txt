@@ -1,9 +1,9 @@
 ==============================================================================
     MPPRINTER
-                                                              Version 0.5.0
-                                                                2020/07/17
+                                                              Version 0.5.1
+                                                                2025/10/19
 
-                         Copyright (c) 2011-2020, Sasaji. All rights reserved.
+                         Copyright (c) 2011-2025, Sasaji. All rights reserved.
 ==============================================================================
 
 ● はじめに
@@ -23,8 +23,8 @@
 
 ● 動作確認環境
 
-  ◆Windows ... Windows10 / Windows7 SP1
-  ◆MacOSX .... High Sierra(10.13.6)(64bit)
+  ◆Windows .. Windows11(Intel 64bit) / Windows10(Intel 64bit)
+  ◆MacOS .... Sequoia(15.6.1 Apple silicon) / High Sierra(10.13.6 Intel 64bit)
 
 
 ● インストール
@@ -52,7 +52,7 @@
   実行時に、VC++ 2010 RUNTIMEのインストールが必要になるかもしれません。
   詳細はマイクロソフトのページで検索してください。
 
-  ◆MacOSX版
+  ◆MacOS版
 
   1. mpprinter_*.dmgを解凍すると以下のファイルができます。
 

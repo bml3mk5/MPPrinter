@@ -1,5 +1,8 @@
-﻿///
-/// エラー情報
+﻿/// @file errorinfo.cpp
+///
+/// @brief エラー情報
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #include "errorinfo.h"
 

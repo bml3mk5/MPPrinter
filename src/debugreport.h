@@ -1,5 +1,8 @@
-﻿///
-/// Debugging
+﻿/// @file debugreport.h
+///
+/// @brief Debugging
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #ifndef _DEBUGREPORT_H_
 #define _DEBUGREPORT_H_

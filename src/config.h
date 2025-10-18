@@ -1,6 +1,8 @@
 ﻿/// @file config.h
 ///
-/// config.h
+/// @brief config
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #ifndef _CONFIG_H_
 #define _CONFIG_H_

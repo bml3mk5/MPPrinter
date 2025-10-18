@@ -9,6 +9,7 @@
 #include "main.h"
 #include <wx/filename.h>
 #include <wx/fontenum.h>
+#include "mymenu.h"
 #include "errorinfo.h"
 #include "densitybox.h"
 #include "res/mpprinter.xpm"
@@ -68,10 +69,10 @@ void MpPrinterApp::SetAppPath()
 #ifdef __WXOSX__
 	if (app_path.Find(_T("MacOS")) >= 0) {
 		wxFileName file = wxFileName::FileName(app_path+"../../../");
-		file.Normalize();
+		file.Normalize(wxPATH_NORM_ALL);
 		ini_path = file.GetPath(wxPATH_GET_SEPARATOR);
 		file = wxFileName::FileName(app_path+"../../Contents/Resources/");
-		file.Normalize();
+		file.Normalize(wxPATH_NORM_ALL);
 		res_path = file.GetPath(wxPATH_GET_SEPARATOR);
 	} else
 #endif
@@ -140,8 +141,8 @@ BEGIN_EVENT_TABLE(MpPrinterFrame, wxFrame)
 END_EVENT_TABLE()
 
 // 翻訳用
-#define APPLE_MENU_STRING _TX("Hide mpprinter"),_TX("Hide Others"),_TX("Show All"),_TX("Quit mpprinter"),_TX("Services"),_TX("Preferences…")
-#define DIALOG_STRING _TX("OK"),_TX("Cancel")
+#define DIALOG_BUTTON_STRING _TX("OK"),_TX("Cancel")
+#define APPLE_MENU_STRING _TX("Hide mpprinter"),_TX("Hide Others"),_TX("Show All"),_TX("Quit mpprinter"),_TX("Services"),_TX("Preferences…"),_TX("Window"),_TX("Minimize"),_TX("Zoom"),_TX("Bring All to Front")
 
 MpPrinterFrame::MpPrinterFrame(const wxSize& size)
        : wxFrame(NULL, wxID_ANY, wxEmptyString, wxDefaultPosition, size)
@@ -159,15 +160,15 @@ MpPrinterFrame::MpPrinterFrame(const wxSize& size)
 #endif
 
 	// menu
-	menuFile = new wxMenu;
-	menuView = new wxMenu;
-	menuControl = new wxMenu;
-	menuOther = new wxMenu;
-	menuHelp = new wxMenu;
+	menuFile = new MyMenu;
+	menuView = new MyMenu;
+	menuControl = new MyMenu;
+	menuOther = new MyMenu;
+	menuHelp = new MyMenu;
 //	wxMenuItem *mitm = NULL;
 
 	// file menu
-	menuFile->Append( IDM_OPEN_FILE, _("&Open...") );
+	menuFile->Append( IDM_OPEN_FILE, _("&Open...\tCtrl+O") );
 	menuFile->Append( IDM_CLOSE_FILE, _("&Close") );
 	menuFile->AppendSeparator();
 	menuFile->Append( IDM_PAGE_SETUP, _("Page Set&up...") );
@@ -177,11 +178,11 @@ MpPrinterFrame::MpPrinterFrame(const wxSize& size)
 	menuFile->Append( IDM_PRINT_PREVIEW, _("Print Pre&view") );
 	menuFile->Append( IDM_PRINT, _("&Print...") );
 	menuFile->AppendSeparator();
-	menuRecentFiles = new wxMenu();
+	menuRecentFiles = new MyMenu();
 	UpdateMenuRecentFiles();
 	menuFile->AppendSubMenu(menuRecentFiles, _("&Reccent Files") );
 	menuFile->AppendSeparator();
-	menuFile->Append( wxID_EXIT, _("E&xit") );
+	menuFile->Append( wxID_EXIT, _("E&xit\tAlt+F4") );
 	// view menu
 	menuView->Append( IDM_ZOOM_IN, _("Zoom &In") );
 	menuView->Append( IDM_ZOOM_OUT, _("Zoom &Out") );
@@ -212,11 +213,15 @@ MpPrinterFrame::MpPrinterFrame(const wxSize& size)
 #endif
 
 	// menu bar
-	wxMenuBar *menuBar = new wxMenuBar;
+	MyMenuBar *menuBar = new MyMenuBar;
 	menuBar->Append( menuFile, _("&File") );
 	menuBar->Append( menuView, _("&View") );
 	menuBar->Append( menuControl, _("&Control") );
 	menuBar->Append( menuOther, _("&Other") );
+#if defined(__WXOSX__) && wxCHECK_VERSION(3,1,2)
+	// window system menu on mac os x
+	menuBar->Append( new wxMenu(), _("&Window") );
+#endif
 	menuBar->Append( menuHelp, _("&Help") );
 
 	SetMenuBar( menuBar );
@@ -358,7 +363,7 @@ void MpPrinterFrame::OnDensity(wxCommandEvent& event)
 		gConfig.SetDensity(dlg.GetDensity());
 		mpri->SetDensity(dlg.GetDensity());
 		mpri->SetReverse(dlg.GetReverse());
-		Refresh();
+		RefreshAll();
 	}
 }
 /// 回転
@@ -374,7 +379,7 @@ void MpPrinterFrame::OnInitScreen(wxCommandEvent& event)
 /// 更新
 void MpPrinterFrame::OnRefresh(wxCommandEvent& event)
 {
-	Refresh();
+	RefreshAll();
 }
 /// プリンタタイプ変更
 void MpPrinterFrame::OnChangeType(wxCommandEvent& event)
@@ -670,7 +675,7 @@ void MpPrinterFrame::InitScreen()
 }
 
 /// 画面更新
-void MpPrinterFrame::Refresh()
+void MpPrinterFrame::RefreshAll()
 {
 	mpri->ClearCashData();
 	mpri->Preview(panel);
@@ -789,6 +794,11 @@ void MpPrinterPanel::OnDraw(wxDC &dc)
 	GetViewStart(&px, &py);
 	px *= SCROLLBAR_UNIT;
 	py *= SCROLLBAR_UNIT;
+
+//	dc.SetBackground(*wxLIGHT_GREY_BRUSH);
+	dc.SetBackground(wxBrush(wxColour(0xf0f0f0)));
+	dc.Clear();
+
 	MP_PRINTER *mpri = frame->GetMpPrinter();
 	if (mpri) {
 		mpri->DrawData(&dc, px, py, mDrawPart);

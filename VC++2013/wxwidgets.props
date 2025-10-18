@@ -4,12 +4,12 @@
     <DevelopDir>\Devel\vc\</DevelopDir>
     <wxWidgetsDir>$(DevelopDir)wxWidgets-3.2.4\</wxWidgetsDir>
     <wxWidgetsIncludeDir>$(wxWidgetsDir)include\msvc\;$(wxWidgetsDir)include\</wxWidgetsIncludeDir>
-    <wxWidgetsLibDirWin32>$(wxWidgetsDir)lib\vc10\vc_lib\</wxWidgetsLibDirWin32>
-    <wxWidgetsLibDirX64>$(wxWidgetsDir)lib\vc10\vc_x64_lib\</wxWidgetsLibDirX64>
+    <wxWidgetsLibDirWin32>$(wxWidgetsDir)lib\vc12\vc_lib\</wxWidgetsLibDirWin32>
+    <wxWidgetsLibDirX64>$(wxWidgetsDir)lib\vc12\vc_x64_lib\</wxWidgetsLibDirX64>
     <wxWidgetsLibsDebug>wxbase32ud.lib</wxWidgetsLibsDebug>
     <wxWidgetsLibsRelease>wxbase32u.lib</wxWidgetsLibsRelease>
-    <wxWidgetsDllDirWin32>$(wxWidgetsDir)lib\vc10\vc_dll\</wxWidgetsDllDirWin32>
-    <wxWidgetsDllDirX64>$(wxWidgetsDir)lib\vc10\vc_x64_dll\</wxWidgetsDllDirX64>
+    <wxWidgetsDllDirWin32>$(wxWidgetsDir)lib\vc12\vc_dll\</wxWidgetsDllDirWin32>
+    <wxWidgetsDllDirX64>$(wxWidgetsDir)lib\vc12\vc_x64_dll\</wxWidgetsDllDirX64>
   </PropertyGroup>
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>

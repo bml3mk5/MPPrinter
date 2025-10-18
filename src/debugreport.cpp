@@ -1,5 +1,8 @@
-﻿///
-/// Debugging
+﻿/// @file debugreport.cpp
+///
+/// @brief Debugging
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #ifdef _DEBUG_LOG
 

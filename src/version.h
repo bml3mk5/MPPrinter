@@ -1,6 +1,6 @@
 ﻿/// @file version.h
 ///
-/// @author Copyright (c) 2011-2020 Sasaji. All rights reserved.
+/// @author Copyright (c) 2011-2025 Sasaji. All rights reserved.
 ///
 
 #ifndef _VERSION_H_
@@ -10,12 +10,12 @@
 #define APPLICATION_NAME		"mpprinter"
 #define APPLICATION_XPMICON_NAME mpprinter_xpm
 
-#define APPLICATION_VERSION	"0.5.0"
+#define APPLICATION_VERSION	"0.5.1"
 #define APP_VER_MAJOR	0
 #define APP_VER_MINOR	5
-#define APP_VER_REV	0
+#define APP_VER_REV	1
 #define APP_VER_BUILD	0
-#define APP_COPYRIGHT	"Copyright (C) 2011-2020 Sasaji"
+#define APP_COPYRIGHT	"Copyright (C) 2011-2025 Sasaji"
 
 #if defined(__MINGW32__)
 #if defined(x86_64) || defined(__x86_64)

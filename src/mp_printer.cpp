@@ -2502,10 +2502,13 @@ void MpPrintout::OnBeginPrinting()
 	GetPPIPrinter(&prn_ppi.x, &prn_ppi.y);
 	wxRect page_rect = GetLogicalPageRect();
 	wxRect paper_rect = GetLogicalPaperRect();
-	wxRect r_paper_rect = GetPaperRectPixels();
 	MySize px;
 	GetPageSizePixels(&px.width, &px.height);
 	wxRect r_page_rect(0,0, px.width, px.height);
+
+#if defined(_DEBUG_LOG) || defined(__WXOSX__) || defined(__WXGTK__)
+	wxRect r_paper_rect = GetPaperRectPixels();
+#endif
 
 #ifdef _DEBUG_LOG
 	wxString dbg;

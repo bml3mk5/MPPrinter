@@ -3,7 +3,7 @@
 #
 CC=g++
 
-APPLICATION_VERSION=0.5.0
+APPLICATION_VERSION=0.5.1
 
 CDEFS=
 DBG_CDEFS=-D_DEBUG -D_DEBUG_LOG
@@ -68,6 +68,7 @@ OBJS=errorinfo.o \
 	server.o \
 	server_setting.o \
 	mp_printer.o \
+	mymenu.o \
 	main.o
 
 EXE =$(BUILDDIR)/$(EXEFILE)

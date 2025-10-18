@@ -62,6 +62,7 @@ OBJS=errorinfo.o \
 	server.o \
 	server_setting.o \
 	mp_printer.o \
+	mymenu.o \
 	main.o
 
 RESOBJS=mpprinter.res

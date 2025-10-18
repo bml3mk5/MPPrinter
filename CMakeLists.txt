@@ -23,6 +23,7 @@ add_executable(${PROJECT_NAME}
 	${SRCDIR}/server.cpp
 	${SRCDIR}/server_setting.cpp
 	${SRCDIR}/mp_printer.cpp
+	${SRCDIR}/mymenu.cpp
 	${SRCDIR}/main.cpp
 )
 

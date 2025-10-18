@@ -1,6 +1,8 @@
 ﻿/// @file common.h
 ///
-/// common.h
+/// @brief common
+///
+/// @author Copyright (c) Sasaji. All rights reserved.
 ///
 #ifndef _COMMON_H_
 #define _COMMON_H_
